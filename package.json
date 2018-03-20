@@ -1,0 +1,32 @@
+{
+  "name": "javascriptelementsdimension_quickgo",
+  "version": "1.0.0",
+  "description": "A set of ready to use functions that implement different things related to the height and width and the dimension of the different elements from the screen to all dom elements",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedLamineAllal/javascriptElementsDimension_quickGo.git"
+  },
+  "keywords": [
+    "javascript",
+    "dimensions",
+    "elements",
+    "height",
+    "width",
+    "screen",
+    "DOM"
+  ],
+  "author": "Allal Mohamed Lamine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohamedLamineAllal/javascriptElementsDimension_quickGo/issues"
+  },
+  "homepage": "https://github.com/MohamedLamineAllal/javascriptElementsDimension_quickGo#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-watch": "^5.0.0"
+  }
+}
