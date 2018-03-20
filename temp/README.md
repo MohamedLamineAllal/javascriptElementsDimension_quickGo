@@ -3,6 +3,6 @@ A set of ready to use functions that implement different things related to the h
 
 Here bellow an overview of all the content::
 
-```
+```javascript
 #=include ../all.js
 ```
