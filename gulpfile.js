@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
-watch = require('gulp-watch'),
-concat = require('gulp-concat')
+    watch = require('gulp-watch'),
+    concat = require('gulp-concat'),
+    include = require('gulp-include')
 
 // gulp default task can be run with just gulp no name is needed to be provided
 // gulp.task('default', function() {
@@ -16,7 +17,15 @@ gulp.task('watch', function() {
 })
 
 gulp.task('javascript', function() {
-    gulp.src('./categorised/**/*.js')
+    return gulp.src('./categorised/**/*.js')
     .pipe(concat('all.js')).on('error', console.log)
-    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest('./')) && gulp.start('addAllToReadme')
 })  
+
+gulp.task('addAllToReadme', function () {
+    return gulp.src('./temp/README.md')
+    .pipe(include()).on('error', console.log)
+    .pipe(gulp.dest('./'))
+}) 
+    
+
